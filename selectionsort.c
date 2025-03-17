@@ -24,3 +24,15 @@ void selectionsort(int arr[], int size)
 		j++;
 	}
 }
+
+void	print_array(int arr[], int len)
+{
+	int	i;
+
+	i = 0;
+	while (i < len)
+	{
+		printf("%d", arr[i]);
+		i++;
+	}
+}
