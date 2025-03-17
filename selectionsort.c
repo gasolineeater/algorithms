@@ -25,14 +25,29 @@ void selectionsort(int arr[], int size)
 	}
 }
 
-void	print_array(int arr[], int len)
+void	print_arr(int arr[], int len)
 {
 	int	i;
 
 	i = 0;
 	while (i < len)
 	{
-		printf("%d", arr[i]);
+		printf("%d, ", arr[i]);
 		i++;
 	}
+}
+
+int	main()
+{
+	int	len;
+	int	arr[] = {4, 8, 10, 2, 50, 1};
+
+	len = sizeof(arr) / sizeof(arr[0]);
+	printf("Before sorting: ");
+	print_arr(arr, len);
+	printf("\n");
+	printf("After sorting: ");
+	selectionsort(arr, len);
+	print_arr(arr, len);
+	return (0);
 }
