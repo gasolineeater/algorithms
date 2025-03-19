@@ -34,3 +34,16 @@ void	printarr(int arr[], int n)
 	printf("\n");
 }
 
+int	main()
+{
+	int arr[] = {7, 5, 9, 3, 2, 1};
+	int	n;
+
+	n = sizeof(arr) / sizeof(arr[0]);
+	printf("Before sorting: ");
+	printarr(arr, n);
+	insertionsort(arr, n);
+	printf("After sorting: ");
+	printarr(arr, n);
+	return (0);
+}
