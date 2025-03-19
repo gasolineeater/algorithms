@@ -21,7 +21,7 @@ void	insertionsort(int arr[], int n)
 	}
 }
 
-void printarr(int arr[], int n)
+void	printarr(int arr[], int n)
 {
 	int	i;
 
@@ -33,3 +33,4 @@ void printarr(int arr[], int n)
 	}
 	printf("\n");
 }
+
