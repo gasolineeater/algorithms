@@ -20,3 +20,16 @@ void	insertionsort(int arr[], int n)
 		i++;
 	}
 }
+
+void printarr(int arr[], int n)
+{
+	int	i;
+
+	i = 0;
+	while (i < n)
+	{
+		printf("%d, ", arr[i]);
+		i++;
+	}
+	printf("\n");
+}
